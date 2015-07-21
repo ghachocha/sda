@@ -1,0 +1,3585 @@
+/*
+ * Author: Amani J. Ghachocha
+ * Content: Public pages style
+ * 
+*/
+/*
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans+Condensed:300);
+*/
+@font-face {
+    font-family: "Poiret One";
+    src: url('../fonts/Poiret_One/PoiretOne-Regular.ttf');
+}
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url('../fonts/Open_Sans_Condensed/OpenSans-CondBold.ttf');
+}
+@font-face {
+    font-family: "Open Sans Condensed Light";
+    src: url('../fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf');
+}
+@font-face {
+    font-family: "Open Sans Condensed Italic";
+    src: url('../fonts/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf');
+}
+@font-face {
+    font-family: "Yanone Kaffeesatz Light";
+    src: url('../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-Light.ttf');
+}
+@font-face {
+    font-family: "Yanone Kaffeesatz";
+    src: url('../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-ExtraLight.ttf');
+}
+@font-face {
+    font-family: "Halant Light";
+    src: url('../fonts/Halant/Halant-Light.ttf');
+}
+html, body {
+    height: 100%;
+}
+
+body{
+	font-size: 16px;
+	font-family: "Segoe UI","Segoe WP", "Lucida Grande", "Lucida Sans Unicode", "Yanone Kaffeesatz",helvetica, serif, sans-serif;
+	/*
+	background: -webkit-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+	background:    -moz-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+	background:     -ms-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+	background:      -o-linear-gradient(top,#FFFFFF 50%,#C0C0C0); */
+	background: url('../img/system-img/texture-01.jpg') repeat;
+	position: relative;
+}
+
+header .sg_nav_bar{
+	width: 100%;
+	height: auto; 
+	padding: 0px;
+	margin: 0px;
+	/*background: #006E8C;
+	background: -webkit-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:    -moz-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:     -ms-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:      -o-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+
+	/*background: -webkit-linear-gradient(top, #257CA7 0, #174D69 100%) no-repeat;
+	background: #006E8C;
+	background: -webkit-linear-gradient(top,#FFFFFF 25%,#C0C0C0);
+	background:    -moz-linear-gradient(top,#FFFFFF 30%,#C0C0C0);
+	background:     -ms-linear-gradient(top,#FFFFFF 30%,#C0C0C0);
+	background:      -o-linear-gradient(top,#FFFFFF 30%,#C0C0C0); 
+	background: url('/scholargate/assets/img/system-img/texture-01.jpg') repeat; */
+	/*border-bottom: 5px solid #FFA834; */
+}
+
+footer{
+	/*position: absolute;
+	bottom: 0px; */
+	margin-top: 50px;
+	width: 100%;
+	height: 50px;
+	padding-bottom: 100px;
+	background: #006E8C;
+	min-height: 200px;
+}
+
+@media only screen and (max-width: 480px){
+	footer{
+      height: auto;
+      padding-bottom: 40px;
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+
+#sg_site_logo{
+	position: relative;
+	top: 15px;
+	height: 80px;
+}
+
+@media only screen and (min-width: 992px){
+	#sg_site_logo{
+	  position: relative;
+	  top: 20px;
+	  left: 100px;
+	  height: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+	#sg_site_logo{
+	  position: relative;
+	  top: 15px;
+	  height: 60px;
+    }
+}
+
+.sg_site_logo_sm{
+	position: relative;
+	top: 12px;
+	height: 50px;
+}
+
+.sg_site_logo_lg{
+	position: relative;
+	top: 15px;
+	height: 80px;
+}
+
+.sg_main_content{
+	padding-top: 10px;
+}
+
+.sg_header_container{
+    width: 100%;
+}
+
+.sg_account_avatar{
+	color: #fff;
+	background: #e68523 !important;
+}
+
+/****** Tooltip style ********/
+/*.tooltip-arrow, .red-tooltip + .tooltip > .tooltip-inner {background-color: #006E8C;}*/
+/******* End of tooltip style *****/
+
+/***** Bootstrap carousel style *******/
+.carousel-control{
+	background-image: none !important;
+}
+/****** End of Bootstrap carousel style *****/
+
+.sg_hidden{
+	display: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.sg_green_bold{
+	color: green;
+	font-weight: bold
+}
+
+.sg_btn_action{
+	background-color: #EDDB11 !important;
+	background: -webkit-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	background: -moz-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	background: -ms-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	background: -o-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	font-weight: bold;
+}
+
+.sg_btn_stretch{
+	width: 100%;
+}
+
+.sg_center{
+	text-align: center;
+}
+
+.sg_remove{
+	color: orange;
+}
+
+.sg_remove:hover{
+	color: red;
+}
+
+.sg_fieldset{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+input[type=file]{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_btn_action, .sg_btn_default{
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.sg_follow_us{
+	    text-align: center;
+    }
+}
+
+.sg_follow_us img{
+	margin-right: 20px;
+}
+
+.sg_no_margin{
+	margin: 0px;
+}
+
+.sg_form_controls{
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.sg_form_control_right{
+	margin-top: 10px;
+	margin-left: 10px;
+	float: right;
+	display: inline-block;
+}
+
+.sg_form_control_left{
+	margin-top: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	float: left;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_form_control_right, .sg_form_control_left{
+		margin-top: 10px;
+		width: 100%;
+	}
+}
+
+.sg_btn_action:hover{
+	background-color: #EDDB14;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.sg_top_bar_container{
+	float: right;
+	padding: 10px 0px 0px 50px;
+}
+
+.sg_top_bar_container a{
+	color: #006E8C;
+	padding: 10px;
+}
+
+.sg_top_bar_link, .sg_top_bar_link a{
+	display: inline-block;
+	color: #006E8C;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 768px){
+    .sg_top_bar_link{
+    	display: block;
+    }
+
+    .sg_link_separator{
+    	display: none;
+    }
+}
+
+.sg_top_bar_container .sg_active{
+	font-weight: bold;
+	color: #FFFFFF !important;
+}
+
+.sg_success_text{
+	margin-top: 10px;
+    color: #72BB53;
+}
+
+.sg_failure_text{
+   margin-top: 10px;
+   color: red;
+   display: none;
+}
+
+.sg_nav_container{
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.sg_overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	z-index: 10000;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+
+.sg_overlay_content{
+	position: relative;
+	display: none;
+}
+
+.sg_sec_nav_bar{
+	/*background: url('../img/system-img/texture-01.jpg') repeat;*/
+}
+
+.sg_sec_nav_bar_public{
+	margin-top: 50px;
+	border-bottom: 5px solid #FFA834;
+}
+
+.sg_nav_link{
+	color: #FFFFFF; 
+	position: relative;
+	/*color: #006E8C; */
+}
+
+.sg_nav_link:hover{
+	/*background: #E9E9E9 !important; 
+	background: -webkit-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:    -moz-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:     -ms-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:      -o-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	/*color: #FFA834; */
+	background: transparent !important;
+	color: #FFA834;
+}
+
+#sg_main_nav ul li .sg_link_highlight{
+	background:  #e68523;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0px;
+	display: none;
+}
+
+@media only screen and (max-width: 768px){
+
+   header .sg_nav_bar{
+       /*background: #00A4D3;*/
+	}
+}
+
+.sg_nav_link_active{
+     /*background: #EDEDED; */
+}
+
+.sg_home_media h3{
+	color: #5b90f8;
+	font-size: 28px;
+}
+
+.sg_icon_bar{
+	background: #FFFFFF; 
+	/*background: #006E8C;*/
+}
+
+.sg_navbar_toggle{
+	/*border: 2px solid #00A4D3;*/
+	border: 2px solid #EDEDED;
+}
+
+.sg_banner{
+	width: 100%;
+	height: auto;
+	background: #000; 
+	position: relative;
+}
+
+#sg_banner_wrapper{
+	/*background: #85bbcd;
+	background: -webkit-linear-gradient(left,#006E8C,#85bbcd);
+	background: -moz-linear-gradient(left,#006E8C,#85bbcd);
+	background: -ms-linear-gradient(left,#006E8C,#85bbcd);
+	background: -o-linear-gradient(left,#006E8C,#85bbcd);*/
+
+	/*background: -webkit-linear-gradient(287deg,#270530 10%,#196d82 36%);
+	background: -moz-linear-gradient(287deg,#270530 10%,#196d82 36%);
+	background: -ms-linear-gradient(287deg,#270530 10%,#196d82 36%);
+	background: -o-linear-gradient(287deg,#270530 10%,#196d82 36%);*/
+	/*background: #85bbcd;*/
+	background: #006E8C;
+	/*background: #8d6cab; */
+	/*background: #e68523; */
+	/*background: #7cb82f;*/
+	/*background: #8d6cab; */
+}
+
+.sg_banner img{
+	width: 100%;
+}
+
+.sg_banner_animation_container{
+	position: absolute;
+	top: 0px;
+}
+
+.sg_banner_slider{
+	position: relative;
+	top: 60px;
+	color: #fff;
+}
+
+.sg_slider_item{
+	padding: 40px 20px;
+	min-height: 350px;
+}
+
+.sg_animation_item{
+	color: #fff;
+	display: none;
+}
+
+.sg_animated_header, .sg_slider_header, .sg_custom_title{
+	color: #fff;
+	text-shadow: 0px 0px 20px #000;
+	font-family: "Segoe WP","Open Sans Condensed Light","Halant Light","Poiret One","Lucida Grande", "Lucida Sans Unicode", helvetica, serif, sans-serif;
+}
+
+.sg_home_btn{
+  width: 100%;
+  text-align: justify;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  webkit-transition: background 0.5s ease-in;
+  -moz-transition: background 0.5s ease-in;
+  -o-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+}
+
+.sg_border_gold{
+  border: 1px solid #e68523;
+  color: #e68523;
+}
+
+.sg_home_btn_white{
+	color: #e68523;
+	border: 1px solid #e68523;
+	margin-top: 20px;
+}
+
+.sg_home_btn:hover{
+	color: #fff;
+	border: 1px solid #e68523;
+	background: #e68523;
+}
+
+.sg_home_btn_white:hover{
+	color: #006E8C;
+	border: 1px solid #006E8C;
+}
+
+.sg_animation_item{
+   /*text-align: center;*/
+}
+
+.sg_slider_content p{
+	margin-bottom: 40px;
+}
+
+#sg_home_search, #sg_school_search_results{
+	box-shadow: 5px 5px 5px #000;
+}
+
+@media only screen and (min-width: 992px){
+	.sg_banner img, #sg_banner_wrapper{
+		min-height: 550px;
+	}
+
+	#sg_banner_white_extended{
+	  position: absolute;
+	  bottom: -20px;
+	  z-index: 0;
+	  width: 100%;
+	  height: 120px;
+	  background: #fff;
+    }
+
+    #sg_banner_wrapper .sg_container_stretch{
+    	position: relative;
+    	z-index: 10;
+    }
+
+	.sg_animation_item{
+      position: absolute;
+      top: 100px;
+      z-index: 600;
+      width: 700px;
+   }
+
+   #sg_home_search, #sg_school_search_results{
+   	  position: relative;
+      top: 60px;
+   }
+
+   .sg_slider_item{
+	  min-height: 350px;
+   }
+
+   .sg_animated_header h1, .sg_slider_header h1{
+   	  font-size: 60px;
+   	  
+   }
+
+   .sg_animated_content, .sg_slider_content{
+   	  font-size: 24px;
+   }
+
+   .sg_home_btn{
+    	width: 100%;
+    }
+
+	.sg_school_photo .sg_img_border{
+	   width: 100%;
+	   height: 300px;
+	}
+
+	.sg_img_zoom{
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+
+	.sg_img_zoom img{
+		-webkit-transition: all 1s ease; /* Safari and Chrome */
+	    -moz-transition: all 1s ease; /* Firefox */
+	    -ms-transition: all 1s ease; /* IE 9 */
+	    -o-transition: all 1s ease; /* Opera */
+	     transition: all 1s ease;
+	}
+
+	.sg_img_zoom:hover img {
+	    -webkit-transform:scale(1.25); /* Safari and Chrome */
+	    -moz-transform:scale(1.25); /* Firefox */
+	    -ms-transform:scale(1.25); /* IE 9 */
+	    -o-transform:scale(1.25); /* Opera */
+	     transform:scale(1.25);
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+   .sg_banner img, #sg_banner_wrapper{
+   	  min-height: 350px;
+   }
+
+   .sg_animation_item{
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 400px;
+      z-index: 700;
+   }
+
+   #sg_home_search, #sg_school_search_results{
+   	  position: relative;
+      top: 60px;
+   }
+
+   .sg_animated_header h1{
+   	  font-size: 36px;
+   	  font-weight: bold;
+   }
+
+   .sg_animated_content{
+   	  font-size: 14px;
+   }
+
+   .sg_school_photo .sg_img_border{
+	  width: 100%;
+	  height: 200px;
+    }
+
+    .sg_home_btn{
+	  width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+   .sg_banner img, #sg_banner_wrapper{
+   	  min-height: 180px;
+   }
+
+   .sg_animation_item{
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      width: 300px;
+      z-index: 700;
+   }
+
+   .sg_animated_header h1{
+   	  font-size: 20px ;
+   	  font-weight: bold;
+   }
+
+   #sg_home_search, #sg_school_search_results{
+   	  position: relative;
+      top: 60px;
+   }
+
+   .sg_slider_item{
+	  min-height: 450px;
+   }
+
+   .sg_animated_content{
+   	  font-size: 14px;
+   }
+
+   .sg_school_photo img{
+	  width: 100%;
+	  height: 150px;
+    }
+
+    .sg_home_btn{
+    	width: 100%;
+    }
+}
+
+.sg_title_lg{
+	font-size: 60px;
+    text-shadow: none;
+}
+
+.sg_sec_nav{
+	padding: 20px;
+}
+
+/******* Our partners ************/
+#sg_our_partners{
+	background: -webkit-linear-gradient(top, #3a3f90,#45b29d);
+	background: -moz-linear-gradient(top, #3a3f90,#45b29d);
+	background: -ms-linear-gradient(top, #3a3f90,#45b29d);
+	background: -o-linear-gradient(top, #3a3f90,#45b29d);
+	background: linear-gradient(top, #3a3f90,#45b29d);
+}
+
+.sg_partner_logo img{
+   width: 200px;
+   height: 150px;
+}
+
+/******* End of our partner ***********/
+
+/******* Our happy clients ***********/
+#sg_our_clients{
+	background: -webkit-linear-gradient(top, #efc94c,#e27a3f);
+	background: -moz-linear-gradient(top, #efc94c,#e27a3f);
+	background: -ms-linear-gradient(top, #efc94c,#e27a3f);
+	background: -o-linear-gradient(top, #efc94c,#e27a3f);
+	background: linear-gradient(top, #efc94c,#e27a3f);
+	font-size: 18px;
+	color: #EDEDED;
+}
+
+.sg_client_container{
+	text-align: center;
+}
+
+.sg_client_details{
+	margin-top: 30px;
+}
+
+.sg_client_img img{
+   box-shadow: 0px 0px 20px #C0C0C0;
+   height: 200px;
+   height: 200px;
+}
+/****** End of our happy clients ***********/
+
+.sg_advice, .sg_search, .sg_apply{
+	/*
+    background: -webkit-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+    background:    -moz-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+    background:     -ms-linear-gradient(top,#FFFFFF 50%,#C0C0C0);
+    background:      -o-linear-gradient(top,#FFFFFF 50%,#C0C0C0); */
+    -webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+	padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.sg_brand_icon{
+	color: #fff;
+	font-size: 30px;
+	padding: 15px;
+	-webkit-border-radius: 30px;
+	   -moz-border-radius: 30px;
+	    -ms-border-radius: 30px;
+	     -o-border-radius: 30px;
+	        border-radius: 30px;
+	background-color: #006E8C;
+	background: -webkit-linear-gradient(top left,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:    -moz-linear-gradient(top left,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:     -ms-linear-gradient(top left,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:      -o-linear-gradient(top left,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	
+	background: #e68523; 
+}
+
+.sg_info_panel{
+	text-align: center;
+}
+
+.sg_info_panel .sg_wrapper_hover{
+    text-align: none;
+}
+
+.sg_info_icon{
+	font-size: 47px;
+	padding: 20px;
+	color: #e68523; 
+	/*color: #7cb82f; */
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+	        border-radius: 50%;
+    border: 3px solid #e68523; 
+    /*border: 3px solid #7cb82f; */
+}
+
+.sg_info_sm_icon{
+	font-size: 30px;
+	padding: 15px;
+	color: #e68523; 
+	/*color: #7cb82f; */
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+	        border-radius: 50%;
+    border: 3px solid #e68523; 
+    /*border: 3px solid #7cb82f; */
+}
+
+.sg_dashed_icon{
+   color: grey;
+   font-size: 12px;
+   padding: 5px;
+   border: 2px dashed #C0C0C0;
+}
+
+.sg_slider_icon{
+	color: #fff;
+	font-size: 15px;
+	padding: 10px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: rgba(0,0,0,0.4);
+	cursor: pointer;
+	margin-right: 20px;
+	border: 2px solid #EDEDED;
+}
+
+.sg_slider_icon:hover{
+	color: lightblue;
+}
+
+.sg_copyright{
+	margin-top: 20px;
+	font-size: 12px;
+	text-align: right;
+	color: #fff;
+}
+
+.sg_copyright a{
+	color: #fff;
+}
+
+.sg_footer_links{
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+.sg_footer_links a{
+	color: #fff;
+	margin-right: 20px;
+}
+
+@media only screen and (max-width: 480px){
+   .sg_footer_links a{
+	  display: block;
+	  text-align: center;
+	  font-size: 14px;
+	  margin-bottom: 10px;
+   }
+
+   .sg_copyright{
+   	  font-size: 14px;
+   	  text-align: center;
+   }
+}
+
+.sg_footer_links a:hover, .sg_copyright a:hover{
+	color: #e68523;
+}
+
+.sg_container_stretch{
+	
+}
+
+.sg_media_container{
+	padding: 10px;
+}
+
+.sg_round_background{
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+}
+
+.sg_home_media_icon{
+	font-size: 50px;
+	color: #EFEFEF;
+}
+
+.sg_media_content{
+   margin-top: 20px;
+}
+
+.sg_what_users_say{
+	width: 100%;
+	height: 500px;
+	/*background: #fff; */
+}
+
+.sg_what_users_say .sg_poster{
+	width: 100%;
+	padding: 10px;
+}
+
+.sg_what_users_say .sg_poster img{
+	width: 100%;
+	height: 180px;
+}
+
+.sg_what_users_say .sg_poster p{
+	font-size: 18px;
+}
+
+.sg_what_users_say .sg_poster_content{
+    background: steelblue;
+    color: #fff;
+    padding: 10px;
+}
+
+.sg_what_users_say .sg_quotes{
+	font-size: 40px;
+}
+
+/********** School Profile Page Style **********/
+.sg_input_push_down{
+	margin-bottom: 15px;
+}
+/********** School Profile Page Style **********/
+
+/******** School Blog Style***********8 */
+#sg_school_cover_img{
+   height: 300px;
+   width: 100%;
+   background: url('../img/system-img/cover.jpg') repeat;
+   background-size: 100% 100%;
+   position: absolute-fixed;
+}
+
+#sg_school_blog_header{
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.sg_blog_container{
+	position: relative;
+	top: -300px;
+}
+
+.sg_blog_header{
+	height: auto;
+	margin: 10px 0px 10px 0px;
+}
+
+.sg_blog_header .sg_applications_media{
+	border: none;
+}
+
+.sg_blog_header .sg_media_body{
+    margin-top: 12px;
+}
+
+.sg_blog_header .sg_star_rating_container{
+	position: relative;
+	top: -2px;
+}
+
+.sg_blog_center{
+	height: auto;
+}
+
+.sg_carousel_arrow{
+	
+}
+
+/*********** Read more collapse feature **********/
+.classical-read-more, .classical-read-more-close{
+	color: green;
+	float: right;
+	cursor: pointer;
+}
+
+.classical-read-more:hover, .classical-read-more-close:hover{
+	text-shadow: 0px 0px 2px #ccc;
+}
+
+.classical-read-more-hidden{
+	display: none;
+}
+
+.sg_read_more_block_left .classical-read-more-close, .sg_read_more_block_left .classical-read-more{
+	display: block;
+	float: none;
+}
+/************* End of Read more collapse feature **********/
+
+.sg_school_description{
+	width: 100%;
+	overflow: hidden;
+	background: #fcf8e3;
+	padding: 10px;
+}
+
+.sg_school_description p{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.sg_read_more{
+    font-size: 12px;
+    color: green;
+    cursor: pointer;
+}
+
+.sg_school_description .sg_read_more{
+    display: inline;
+    margin-left: 20px;
+}
+
+.sg_blog_application_item, .sg_school_event_item{
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 4px;
+	overflow: auto;
+}
+
+.sg_blog_application_item p{
+	font-size: 12px;
+}
+
+.sg_blog_application_item .sg_apply_now{
+    float: right;
+}
+
+.sg_quick_facts{
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.sg_quick_fact_item p{
+   font-size: 12px;
+}
+
+.sg_teachers_comments_panel, .sg_students_comments_panel, .sg_panel {
+	border-radius: 0px !important;
+	background-color: #FFFFFF;
+}
+
+.sg_blog_aside_left{
+	height: auto;
+}
+
+.sg_blog_aside_right{
+	height: auto;
+}
+
+.sg_school_events{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.sg_school_event_item .sg_rate_details, .sg_school_event_item .sg_date{
+	display: inline-block;
+}
+
+.sg_school_event_item .sg_rate_details{
+	font-size: 12px;
+	float: right;
+}
+
+.sg_no_school_events{
+	color: #006E8C;
+}
+
+.sg_school_photo{
+	background: #FFFFFF;
+	height: auto;
+	width: 100%;
+	/*box-shadow: 0px 0px 5px #C0C0C0;*/
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.sg_school_photo img{
+	width: 100%;
+}
+
+#sg_sch_location{
+	width: 100%;
+}
+
+#sg_sch_location img{
+	height: 100% !important;
+}
+
+@media only screen and (min-width: 992px){
+    .sg_school_photo img{
+    	height: 300px !important;
+    }
+
+    #sg_sch_location{
+	   height: 450px;
+   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+    .sg_school_photo img{
+    	height: 250px !important;
+    }
+
+    #sg_sch_location{
+	   height: 350px;
+   }
+}
+
+@media only screen and (max-width: 480px){
+    .sg_school_photo img{
+    	height: 200px !important;
+    }
+
+    #sg_sch_location{
+	   height: 250px;
+   }
+}
+
+.sg_school_cost, .sg_school_activities{
+	background: #FFFFFF;
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+}
+
+.sg_key{
+	color: green;
+	display: inline-block;
+}
+
+.sg_value{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.sg_carousel_caption{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 0px;
+	padding-bottom: 10px; 
+	display: none;
+}
+
+.sg_staff_img{
+	border: 1px solid #CCCCCC;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.sg_staff_img img{
+	width: 100%;
+	height: 150px;
+}
+
+.sg_staff_img_caption{
+	height: auto;
+	width: 100%;
+	background: #FFFFFF;
+	font-size: 12px;
+	padding: 2px 5px 2px 5px;
+}
+
+.sg_staff_name{
+	color: green;
+}
+
+.sg_staff_img_caption span{
+	display: block;
+}
+
+
+.sg_applications{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.sg_video{
+	margin-bottom: 10px;
+}
+
+.sg_no_applications{
+	color: #006E8C;
+}
+
+.sg_school_regulations, .sg_school_academics, .sg_school_campus, .sg_school_facilities{
+	border: 1px solid #C0C0C0;
+	padding: 5px 10px 5px 10px;
+	background: #FFFFFF;
+}
+
+.sg_applications, .sg_school_events, .sg_quick_facts, .sg_school_applications, .sg_alert_panel, .sg_custom_content,
+.sg_application_preview, .sg_login_to_pay, .sg_join_us, .sg_buy_form, .sg_video, .sg_white_background, .sg_fb_like_box,
+.sg_social_media, .sg_tab_container, .sg_partner_container{
+	border: 1px solid #C0C0C0;
+	/*box-shadow: 0px 0px 5px #C0C0C0; */
+	padding: 5px 10px 5px 10px;
+	
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px; 
+	background: #FFFFFF;
+}
+
+.sg_custom_container{
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px; 
+	background: #FFFFFF;
+	overflow: auto;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sg_custom_content{
+	overflow: auto;
+}
+
+.sg_fb_like_box{
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+.sg_fb_like_box .fb-like-box{
+	position: relative;
+	width: 100%;
+}
+
+.sg_fb_like_box iframe{
+	width: 100% !important;
+	height: auto;
+	border: none;
+}
+
+
+.sg_video{
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.sg_quick_facts{
+	width: 100%;
+	height: auto;
+}
+
+.sg_quick_facts_body{
+	color: #006E8C;
+
+
+
+}
+.sg_school_applications, .sg_school_events{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.sg_teachers_comments_heading,.sg_students_comments_heading, .sg_panel_heading, .sg_modal_header_, 
+.sg_live_chat_collapse, .sg_account_header{
+	background: #006E8C !important;
+	color: #FFFFFF !important;
+	/*border-radius: 0px !important;*/
+}
+
+.sg_modal_header{
+	border-radius: 5px 5px 0px 0px;
+	background: url('../img/system-img/texture-01.jpg') repeat;
+}
+
+.sg_teachers_comments{
+	margin-top: 20px;
+	border-radius: 4px;
+}
+
+.sg_blog_bottom{
+	height: 30px;
+}
+
+.sg_school_nav, .sg_admin_nav, .sg_panel{
+	/*box-shadow: 0px 0px 5px #C0C0C0;*/
+	border: 1px solid #C0C0C0;
+	background: #FFFFFF;
+	border-radius: 4px !important;
+}
+
+.sg_school_nav a, .sg_admin_nav a, .sg_vertical_nav a{
+	background-color: inherit; 
+    border: none;
+    box-shadow: none;
+    color: #006E8C;
+   /* border-radius: 0px !important; */
+}
+
+.sg_school_nav a:hover, .sg_admin_nav a:hover, .sg_vertical_nav a:hover, .sg_search_results a:hover{
+	/*
+	background: -webkit-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:    -moz-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:     -ms-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:      -o-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important; */
+	background: #fcf8e3;
+	color: #006E8C;
+}
+
+.sg_blue_normal{
+	color: #5b90f8;
+}
+
+
+/*********** Small Screen Nav Collapse ***********/
+
+.sg_nav_collapse{
+	padding: 10px 12px;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	background: -webkit-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:    -moz-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:     -ms-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	background:      -o-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3) !important;
+	margin-left: 0px;
+	vertical-align: top;
+	display: none;
+	position: absolute;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.sg_nav_collapse .sg_icon{
+	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 769px){
+	.sg_vertical_nav{
+	    display: block;
+    }
+    
+    .sg_nav_collapse{
+    	display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+	.sg_nav_wrapper{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 900;
+	}
+
+	.sg_vertical_nav{
+    	display: none;
+    }
+
+    .sg_vertical_nav, .sg_nav_collapse{
+	    display: inline-block;
+    }
+
+    .sg_nav_collapse{
+    	vertical-align: top;
+    }
+}
+
+/*********** End of Small Screen Nav Collapse ***********/
+
+.sg_icon{
+    color: #e68523; 
+    /*
+    background: #006E8C;
+    padding: 5px;
+    border-radius: 2px;
+	/*color: #006E8C; */
+}
+
+.sg_icon_blue{
+    color: #006E8C;
+}
+
+.sg_icon_white{
+	color: #FFFFFF;
+}
+
+.sg_blog_thumbnail{
+	padding: 0px;
+}
+
+.sg_blog_comment{
+}
+
+.sg_blog_comment_row:not(1){
+	margin-top: 40px;
+}
+
+/*************Login Dialog Style ******************/
+.sg_login_form{
+	width: 80%;
+	margin: auto;
+}
+
+.sg_login_form input{
+	margin-top: 10px;
+}
+
+.sg_submit_btn{
+	margin-left: 10px;
+}
+
+.sg_progress_bar{
+	display: none;
+}
+
+.sg_progress_title{
+	margin-top: 10px;
+	font-weight: bold;
+	color: #008DB1;
+}
+
+@media only screen and (max-width: 480px){
+   .sg_login_form input[type='submit']{
+   	   width: 100%;
+   }
+}
+/*************End of Login Dialog Style ******************/
+
+
+/************ Applications Page Style *************/
+
+.sg_video video{
+    width: 100%;
+    height: auto;
+}
+
+.sg_applications{
+	width: 100%;
+	height: auto;
+}
+
+.sg_search_applications{
+	margin-bottom: 10px;
+}
+
+.sg_go_to_school_page, .sg_apply_now{
+	text-decoration: none;
+}
+
+.sg_applications_media{
+	border-bottom: 1px solid #C0C0C0; 
+}
+
+.sg_applications{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+@media only screen and (min-width: 481px){
+   .sg_applications_media .sg_go_to_school_page{
+	  float: right;
+    }
+
+    .sg_applications_media .sg_school_name{
+    	overflow: auto;
+    	display: block;
+    }
+
+    .sg_applications_media .sg_apply_now{
+    	float: right;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+
+	.sg_applications_media .sg_go_to_school_page{
+	  float: none;
+	  display: block;
+    }
+
+    .sg_applications_media .sg_apply_now{
+    	display: block;
+    }
+}
+
+.sg_star_rating_container{
+   position: relative;
+   top: -10px;
+}
+
+.sg_star_rating{
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+}
+
+.sg_star_rating li{
+	padding: 0px;
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+    background: url('../img/system-img/star-rate.png') left center no-repeat;
+    background-size: 15px 15px;
+}
+
+.sg_rating_tag, .sg_other_rates{
+	width: auto;
+	font-size: 12px;
+	color: green;
+	display: inline-block;
+	position: relative;
+    top: -4px;
+}
+
+.sg_rate_value{
+	color: #000000;
+	margin: 0px 20px 0px 8px;
+}
+
+.sg_more_app_btn{
+	width: 100%;
+	margin: 10px 0px 20px 0px;
+}
+
+.sg_join_us{
+   background: #fcf8e3;
+   padding: 15px;
+   margin-bottom: 20px;
+}
+
+.sg_join_us button{
+	margin-top: 10px;
+}
+
+.sg_join_us .sg_heading{
+	color: #000;
+}
+
+.sg_join_us ul li{
+	color: #000;
+	list-style-type: disc;
+}
+
+.sg_search_applications .sg_select_categories{
+   	border-radius: 4px;
+} 
+
+@media only screen and (max-width: 768px){
+   .sg_search_applications .sg_select_categories{
+   	  width: 100% !important;
+   }
+}
+/************End of Applications Page Style *************/
+
+/******** Search for school Page Style***********/
+
+.sg_schools_list{
+	width: 100%;
+	height: 250px;
+	background: #7A7A7A;
+	box-shadow: 0px 2px 1px #000000;
+	display: none;
+}
+
+.sg_collapse_icon{
+	color: #FFFFFF;
+	padding: 5px 10px 5px 10px;
+	width: auto;
+	height: auto;
+	float: right;
+	background: #7A7A7A;
+	margin-bottom: 10px;
+	box-shadow: -2px 1px 1px #000000;
+	border-radius: 0px 0px 0px 10px;
+}
+
+.sg_collapse_icon:hover{
+	cursor: pointer;
+}
+
+.sg_collapse_icon .sg_icon{
+	/*margin: 0px 10px 0px 10px;*/
+}
+
+.sg_school_search{
+	/*
+	padding-left: 0px;
+	padding-right: 0px;
+	*/
+}
+
+.sg_tab_pane{
+	margin-bottom: 20px;
+}
+
+.sg_tab_container{
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.sg_tab_pane form{
+	margin-top: 20px;
+}
+
+.sg_search_paragraph{
+	color: #006E8C;
+	font-style: italic;
+}
+/********End of Search for Schools Page Style***********/
+
+/**********Live Chart Style**********/
+
+.sg_live_chat{
+    position: fixed;
+    bottom: 0px;
+	right: 0px;
+	z-index: 900;
+	height: auto;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 769px){
+	.sg_live_chat{
+		width: 400px;
+    }
+
+    .sg_live_text textarea{
+	    min-height: 150px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	.sg_live_chat{
+		width: 300px;
+    }
+
+    .sg_live_text textarea{
+	   min-height: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+	.sg_live_chat{
+		width: 100%;
+    }
+}
+
+.sg_live_chat_collapse{
+		width: 200px;
+	    background: #006E8C;
+	    border-top: 1px solid #fff;
+	    border-left: 1px solid #fff;
+	    border-right: 1px solid #fff;
+	    color: #FFFFFF;
+	    padding: 5px 10px;
+	    margin: 0 auto;
+	    border-radius: 5px 5px 0px 0px !important;
+	}
+
+.sg_live_chat_collapse:hover{
+    cursor: pointer;
+}
+
+.sg_live_text{
+	width: auto;
+	height: auto;
+	background: #CCCCCC;
+	display: none;
+	padding: 10px;
+	/*border: 10px solid rgba(0,0,0,0.2); */
+}
+
+.sg_live_text input{
+	margin: 10px 0px 10px 0px;
+}
+
+/**********End of Live Chart Style**********/
+
+/*******Main Navigation Hover Style*******/
+
+.sg_more{
+	position: absolute;
+	z-index: 400;
+    width: 100%;
+	height: 300px;
+	background: #FFFFFF;
+	display: none;
+}
+
+/*
+.sg_more_link:hover .sg_more{
+	display: block;
+}
+*/
+/*******End of Main Navigation Hover Style*******/
+
+/************Buy Form Page Style*******************/
+
+.sg_cart_item .sg_school_name, .sg_new_cart_item .sg_school_name{
+   color: #008DB1;
+}
+
+.sg_cart_item .sg_remove{
+	position: relative;
+	top: -10px;
+	color: orange;
+	font-size: 12px;
+}
+
+.sg_cart_item .sg_remove:hover{
+	color: red;
+}
+
+.sg_buy_form{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.sg_cart_item{
+	/*background: #fcf8e3;*/
+	padding: 10px;
+	border-bottom: 1px dashed #C0C0C0;
+	
+}
+
+
+@media only screen and (max-width: 480px){
+	.sg_buy_btn{
+		width: 100%;
+	}
+}
+
+.sg_application_preview{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+
+.sg_price{
+   color: #008DB1;
+   font-weight: bold;
+}
+
+.sg_application_fee{
+	position: relative;
+	top: -10px;
+	font-size: 12px;
+}
+
+.sg_padding_md{
+	padding: 10px;
+}
+
+.sg_padding_lg{
+	padding: 20px;
+}
+
+.sg_padding_sm{
+	padding: 5px;
+}
+
+.sg_margin_btm{
+	margin-bottom: 20px;
+}
+
+.sg_rounded{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+/************End of Buy Form Page Style*******************/
+
+/************Login To Pay Page Style***********/
+
+.sg_login_to_pay{
+   padding-bottom: 20px;
+}
+
+.sg_login_to_pay input{
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 992px){
+   .sg_login_to_pay input[type=email], .sg_login_to_pay input[type=password]{
+	  width: 50%;
+   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+   .sg_login_to_pay input[type=email], .sg_login_to_pay input[type=password]{
+	  width: 70%;
+   }
+}
+
+@media only screen and (max-width: 480px){
+   .sg_login_to_pay input, .sg_login_to_pay button{
+	  width: 100%;
+   }
+}
+/************ End of Login To Pay Page Style ***********/
+
+/****** Payment Methods Style ******/
+.sg_pay_method{
+	margin-bottom: 20px;
+	height: 70px;
+	border: 1px solid #C0C0C0;
+}
+
+.sg_pay_method img{
+	height: 100%;
+	width: 120px;
+	float: left;
+}
+
+.sg_pay_method a{
+	width: 100%;
+	background: #f5f5f5;
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	-webkit-transition: background 0.5s ease-in;
+	-moz-transition: background 0.5s ease-in;
+	-o-transition: background 0.5s ease-in;
+	transition: background 0.5s ease-in;
+}
+
+.sg_pay_method a:hover{
+	background: #C0C0C0;
+}
+
+.sg_hover_fade_txt{
+	vertical-align: middle;
+	line-height: normal;
+}
+/****** End of Payment Methods Style ******/
+
+/*********** Multi Step Bar Style **********/
+
+.sg_payment_steps, .sg_registration_steps{
+   width: 100%;
+   height: auto;
+   /*background: #006E8C; */
+   background: -moz-linear-gradient(center top , #696969 0%, #3F3F3F 100%);
+   color: #FFFFFF;
+   padding: 10px 20px;
+   margin-bottom: 10px;
+   display: none;
+}
+
+.sg_choice_options{
+	margin-top: 20px;
+}
+
+.sg_multi_step{
+   padding: 0px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+@media only screen (min-width: 769px){
+
+}
+
+.sg_multi_step li{
+	display: inline-block;
+    list-style-type: none;
+    height: auto;
+    width: auto;
+}
+
+.sg_multi_step li a{
+	text-align: center;
+	background: #929292; 
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.sg_level_text{
+	
+}
+
+.sg_multi_step_ li a:before{
+     content: "";
+     display: inline-block;
+     height: 0px;
+     width: 0px;
+     border-top: 30px solid transparent;
+     border-bottom: 30px solid transparent;
+     border-left: 30px solid #929292;
+}
+
+
+
+/*********** Multi Step Bar Style **********/
+
+/***************Payment Options Page Style*************/
+
+.sg_payment_options .sg_col{
+	margin-bottom: 10px;
+}
+
+.sg_cart_price{
+	border-bottom: 2px dashed #C0C0C0;
+	margin: 10px 0px 10px 0px;
+}
+
+.sg_cart_price .sg_price_heading{
+	font-weight: bold;
+}
+
+.sg_custom_select{
+    background: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	background: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	background: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	background: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.sg_classic_select{
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.sg_cart_price .sg_cart_currency{
+	display: inline-block;
+	font-weight: normal;
+}
+
+/***************Payment Options Page Style*************/
+
+/******** Custom input group style **********/
+.sg_custom_input_group{
+	margin-bottom: 20px;
+}
+
+.sg_custom_input_group button{
+	background: transparent;
+	width: 120px;
+}
+
+.sg_custom_input_group button:hover{
+    background: transparent;
+}
+
+.sg_no_radius{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+}
+/******** End of Custom input group style *******/
+
+/********Student Application Page Style (User Account)**************/
+.sg_add_btn, .sg_add_btn:hover{
+	margin-top: -2px;
+	color: #FFFFFF;
+	/*background: -webkit-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3);
+	background:    -moz-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3);
+	background:     -ms-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3);
+	background:      -o-linear-gradient(top,#00A4D3 4%,#006E8C 90%,#00A4D3);*/
+	background: #006E8C;
+	border: 1px solid #fff;
+	float: right;
+}
+/********End of Student Application Page Style (User Account)**************/
+
+/********** All Schools Page Style **********/
+.sg_school_profile{
+	background: #fff;
+	margin-bottom: 20px;
+	border-radius: 5px;
+    border: 1px solid #C0C0C0; 
+    position: relative;
+    
+}
+
+.sg_school_profile .sg_media_body{
+	min-height: 120px;
+	text-align: center;
+}
+
+.sg_school_profile .sg_profile_pic img{
+	width: 100%;
+	height: 180px;
+}
+
+.sg_school_profile a img{
+	display: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+	.sg_school_profile .sg_profile_pic img{
+	  display: none;
+    }
+
+    .sg_school_profile a img{
+    	width: 250px;
+    	height: 180px;
+    	display: inline-table;
+    	margin-bottom: 20px;
+    	margin-left: 20px;
+    }
+}
+
+.sg_school_profile .sg_wrapper, .sg_wrapper_hover{
+	position: absolute;
+	z-index: 800;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: transparent;
+	-webkit-transition: background 0.5s ease-in;
+	-moz-transition: background 0.5s ease-in;
+	-o-transition: background 0.5s ease-in;
+	transition: background 0.5s ease-in;
+
+}
+
+.sg_school_profile .sg_wrapper:hover, .sg_wrapper_hover:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.sg_school_profile .sg_media{
+	padding: 15px 5px 5px 5px;
+}
+
+.sg_rating_container{
+	width: 100%;
+	height: 40px;
+	background: #f5f5f5;
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid #C0C0C0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sg_sort_schools{
+   height: 30px;
+}
+
+.sg_school_profile .sg_rating_tag{
+	position: relative;
+	top: 2px;
+}
+
+.sg_school_profile .sg_star_rating{
+	position: relative;
+	top: 5px;
+}
+/********** End of All Schools Page Style **********/
+
+/**********School Application Preview Page************/
+.sg_app_deadline{
+	display: inline-block;
+}
+
+.sg_preview_application .sg_submit_btn{
+	float: right;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_preview_application .sg_submit_btn{
+		margin-top: 10px;
+		width: 100%;
+	}
+}
+
+/**********End of School Application Preview Page************/
+
+/**********School Gallery Page Style************/
+.sg_school_img_item{
+	border: 1px solid #CCCCCC;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.sg_school_img_caption{
+	padding: 0px 5px 5px 5px;
+	position: relative;
+}
+
+.sg_img_wrapper{
+	position: relative;
+}
+
+.sg_img_profile_picture{
+	border-color: #006E8C;
+	border-style: dashed;
+}
+
+.sg_img_wrapper img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_school_img_item .sg_img_wrapper img{
+	   height: 230px;
+    }
+
+    .sg_img_lg_after{
+    	width: 100%;
+    	height: 150px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	.sg_school_img_item .sg_img_wrapper img{
+	   height: 300px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+	.sg_school_img_item .sg_img_wrapper img{
+	   height: 350px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.sg_school_img_item .sg_img_wrapper img{
+	   height: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+	.sg_school_img_item .sg_img_wrapper img{
+	   height: 150px;
+    }
+}
+
+.sg_school_img_item .sg_img_wrapper{
+	width: 100%;
+	height: auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.sg_img_wrapper .sg_img_caption_fade{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 3px 5px 5px 5px;
+	background: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	display: none;
+}
+
+.sg_img_lg_after{
+	position: absolute;
+    width: 400px !important;
+    height: 300px !important;
+    box-shadow: 0px 0px 2px #000, 0px 0px 50px #C0C0C0;
+	z-index: 850;
+	display: none;
+}
+/**********End of School Gallery Page************/
+
+/**********School Applications List  Page************/
+.sg_school_app{
+	border-bottom: 1px solid #ccc; 
+	height: auto;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 10px;
+}
+
+.sg_school_app .sg_app_tag{
+	display: block;
+}
+
+.sg_school_app .sg_status_open{
+	color: green;
+}
+
+.sg_school_app .sg_status_draft{
+	color: grey;
+}
+.sg_school_app .sg_status, .sg_school_app .sg_app_date{
+	margin-left: 10px;
+}
+
+.sg_school_app .sg_config_btn_container{
+	margin: 0px;
+}
+
+#is_paid_app{
+	margin-top: 20px;
+}
+
+#sg_app_fee_row{
+	display: none;
+}
+
+.sg_save_options label{
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 768px){
+	.sg_school_app .sg_status_tag{
+		display: block;
+	}
+
+	.sg_add_btn, .sg_add_btn:hover{
+		float: none;
+		text-align: right;
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sg_margin_bottom_small_screen{
+		margin-bottom: 20px;
+	}
+}
+
+.sg_options_collapse_row{
+	margin: 10px 0px 0px 0px;
+}
+
+.sg_options_col{
+	padding: 0px;
+}
+
+.sg_options_row{
+    margin: 0px; 
+}
+
+.sg_options_col{
+	padding: 0px;
+}
+
+.sg_options_col a{
+	border: none;
+	border-radius: 0px !important;	
+	background: #fcf8e3;
+}
+
+.sg_options_col .sg_list_group{
+	box-shadow: none; 
+	padding: 0px;
+	margin: 0px;
+}
+
+.sg_badge{
+	background: steelblue;
+}
+
+.sg_options_collapse_row a{
+	background: #f5f5f5;
+}
+/**********End of School Applications List Page************/
+
+
+/*********** School Account General Style **************/
+.sg_def_account_content{
+	padding: 10px;
+	width: 100%;
+	height: auto;
+}
+/*********** End of School Account General Style **************/
+
+/********** Pack Benefits Page Style ***********/
+.sg_pack_benefits{
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+.sg_starter_pack, .sg_standard_pack, .sg_custom_pack{
+	width: 100% !important;
+}
+
+.sg_col{
+	padding: 0px;
+	margin: 0px;
+}
+
+.sg_pack_tag{
+	color: #006E8C;
+	font-size: 12px;
+}
+
+.sg_pack_tag_post{
+	color: green;
+}
+
+.sg_pack{
+	font-weight: bold;
+	color: #006E8C;
+}
+
+.sg_starter_pack .sg_pack{
+	background: #EDEDED;
+}
+
+.sg_standard_pack .sg_pack{
+	background: lightblue;
+}
+
+.sg_custom_pack .sg_pack{
+	background: lightgreen;
+}
+
+.sg_benefit_ok_icon, .sg_benefit_no_icon{
+	float: right;
+}
+
+.sg_benefit_ok_icon{
+	color: green;
+}
+
+.sg_benefit_no_icon{
+	color: orange;
+}
+
+.sg_pack_benefits .sg_star_rating_container, .sg_pack_benefits .sg_pack_name{
+	display: inline-block;
+}
+
+.sg_pack_benefits .sg_star_rating_container{
+	position: relative;
+	top: 3px;
+}
+/********** Pack Benefits Page Style ***********/
+
+/********* Forum Post Style ************/
+.sg_post_tag{
+	margin-right: 10px;
+	color: grey;
+	display: inline-block;
+}
+
+.sg_post_container .sg_name{
+	font-size: 14px;
+	color: #006E8C;
+}
+
+.sg_post_container .sg_comment{
+	font-size: 12px;
+}
+
+.sg_post_container .sg_media{
+	margin-top: 10px;
+}
+
+.sg_post_controls{
+	margin-top: 10px;
+}
+
+.sg_post_controls span{
+	cursor: pointer;
+}
+
+.sg_post_container{
+	background: #EDEDED;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.sg_post_comment{
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 5px;
+}
+
+.sg_post_image{
+	display: block;
+}
+
+.sg_post_image img{
+	min-width: 60%;
+	height: 300px;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_post_tag{
+		display: block;
+		margin-top: 10px;
+	}
+
+	.sg_post_image img{
+	    width: 100%;
+	    height: 150px;
+    }
+}
+/********* End Forum Post Style ************/
+
+/************ Academic Forum Style *************/
+
+.sg_post_options{
+	margin-top: 10px;
+}
+
+.sg_post_options .sg_tag{
+	margin-right: 20px;
+	font-weight: normal;
+}
+
+.sg_post_options .sg_share_title{
+	margin-right: 20px;
+}
+
+.sg_post_options .sg_ckeckbox_inline{
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_post_options .sg_checkbox_inline{
+		display: block;
+		margin-top: 10px;
+	}
+
+	.sg_post_options .sg_btn_action{
+		margin: 0px;
+	}
+}
+/************ End of Academic Forum Style *************/
+
+/********** General Admin Style ****************/
+
+.sg_radio input[type=radio], .sg_checkbox input[type=checkbox]{
+	margin-top: 6px;
+}
+
+.sg_add_staff_form .sg_radio_inline, .sg_radio_title{
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 25px;
+	font-weight: normal;
+}
+	
+@media only screen and (max-width: 480px){
+	.sg_add_staff_form .sg_radio_inline, .sg_radio_title{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+.sg_achool_staff .sg_btn_pull_down{
+	margin-top: 20px;
+}
+
+/********** End of General Admin Style ****************/
+
+/********** Staff Details Page Style **************/
+
+.sg_staff_details .sg_value{
+	color: #006E8C;
+}
+
+.sg_staff_details .sg_config_btn_container{
+	margin-top: 20px;
+}
+
+/********** Staff Details Page Style **************/
+
+/********* General Status Tag Style **************/
+@media only screen and (max-width: 480px){
+
+    .sg_status{
+	    display: block;
+	    margin-top: 5px;
+    }
+}
+/********* General Status Tag Style **************/
+
+/********** Admin School Regulations Page Style **************/
+
+@media only screen and (max-width: 480px){
+	.sg_regulations li{
+		border-bottom: 1px solid #CCCCCC;
+	    padding-bottom: 10px;
+	}
+
+	.sg_regulations .sg_status{
+	    display: block;
+	    margin-top: 5px;
+	    font-size: 14px;
+    }
+}
+
+.sg_regulations{
+	padding: 0px;
+}
+
+.sg_regulations li{
+	overflow: auto;
+}
+
+.sg_regulations .sg_status_tag{
+	/*font-size: 12px;*/
+}
+
+.sg_status_open{
+	color: green;
+}
+
+.sg_status_draft{
+	color: grey;
+}
+
+.sg_status_delete{
+	color: orange;
+}
+
+.sg_status_delete:hover{
+	color: red;
+}
+
+.sg_status_tag a:hover{
+	text-decoration: none;
+}
+
+.sg_regulations .sg_status_tag{
+	margin-bottom: 10px;
+}
+
+.sg_regulations .sg_status{
+	margin-right: 10px;
+}
+
+.sg_regulations .sg_app_tag{
+	display: block;
+}
+
+/********** End of Admin School Regulations Page Style **************/
+
+/*********** Build School Profile Page Style **************/
+#sg_geo_code_row{
+	display: none;/*
+	border: 1px solid #CCC;
+	background: #FFF;*/
+	padding-bottom: 35px; 
+}
+
+.sg_hash_sign{
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 992px){
+	.sg_licence_agreement input[type=email], .sg_licence_agreement input[type=password],
+	.sg_licence_agreement input[type=text], .sg_licence_agreement input[type=phone]{
+         width: 50%;
+	}
+}
+
+.sg_alert_panel{
+	padding-bottom: 35px;
+	/*background: #F7F7F9; */
+}
+
+.sg_registration_success_panel{
+    /*margin-top: 10px; */
+}
+
+@media only screen and (max-width: 480px){
+	.sg_build_profile .sg_btn_prev, .sg_build_profile .sg_submit_btn, .sg_build_profile .sg_reset_btn{
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
+
+.sg_build_profile .sg_submit_btn{
+	margin-left: 0px;
+}
+
+.sg_build_profile .sg_btn_prev, .sg_build_profile .sg_reset_btn{
+	margin-right: 10px;
+}
+
+#sg_user_has_account, #sg_user_has_no_account{
+   display: none;
+}
+/*********** End of Build School Profile Page Style **************/
+
+/************* Global Login Page **************************/
+.sg_global_login_panel form{
+	overflow: auto;
+}
+
+.sg_messages_box{
+    margin-top: 10px;
+}
+
+.sg_global_login_panel input[type=submit]{
+    float: right;
+}
+
+.sg_feedback_icon_left{
+	position: absolute;
+    top: 3px;
+    left: 0px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.sg_input_feedback_left{
+	text-indent: 15px;
+}
+
+@media only screen and (min-width: 992px){
+   .sg_global_login_panel{
+       margin-top: 150px;
+   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+   .sg_global_login_panel{
+       margin-top: 100px;
+   }
+}
+
+@media only screen and (max-width: 480px){
+   .sg_global_login_panel{
+       margin-top: 50px;
+   }
+
+   .sg_global_login_panel input[type=submit]{
+       float: none;
+       display: block;
+       width: 100%;
+       margin-top: 10px;
+   }
+}
+
+.sg_password_reset .sg_input, .sg_forgot_password .sg_input{
+	margin-top: 10px;
+}
+
+.sg_forgot_password input[type=email]{
+	margin-bottom: 10px;
+}
+
+.sg_registration_form{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/************* Global Login Page Style **************************/
+
+/************ Select Account Page Style *****************/
+
+.sg_select_account_panel .sg_media{
+	background: #f5f5f5;
+	cursor: pointer;
+}
+
+/************ End of Select Account Page Style *****************/
+
+/******** Photo upload container style ***********/
+.sg_img_upload_container{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+    position: relative;
+}
+
+.sg_img_upload_container .sg_thumb_img_wrapper{
+    height: 50px;
+    background-color: #f5f5f5;
+    float: left;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sg_img_upload_container .sg_img_upload_text{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.sg_img_upload_container .sg_img_upload_text a{
+    vertical-align: center;
+    margin: 0px;
+}
+
+.sg_img_upload_container .sg_link_overflow{
+	position: absolute;
+	z-index: 500;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.05);
+}
+
+.sg_img_upload_icon{
+	vertical-align: center;
+}
+
+.sg_progress_bar_{
+	background-color: lightblue;
+}
+/******** End of Photo upload container style ***********/
+
+/******* Themes style ******/
+
+.sg_fa_icon{
+   color: #fff;
+   padding: 20px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border-radius: 50%;
+}
+
+
+.sg_warning{
+	background: #fcf8e3;
+}
+
+.sg_white{
+	background: #fff;
+}
+
+.sg_pale_grey{
+	background: #fbfbfb;
+}
+
+.sg_purple{
+	color: #8d6cab;
+}
+
+.sg_gold{
+	color: #e68523;
+}
+
+.sg_bold{
+	font-weight: bold;
+}
+
+.sg_border_padding{
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.sg_custom_padding{
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.sg_bold_remove{
+	font-weight: normal;
+}
+
+.sg_info{
+	color: #006E8C;
+}
+
+.sg_italic{
+	font-style: italic;
+}
+
+.sg_color_light_grey{
+	color: #CCCCCC !important;
+}
+
+.sg_color_black{
+	color: #000 !important;
+}
+
+.sg_color_green{
+	color: green;
+}
+
+.sg_color_red{
+	color: red;
+}
+
+.sg_custom_blue{
+	background-color: #006E8C;
+}
+
+.sg_custom_grey{
+	background: #f5f5f5 !important;
+}
+
+.sg_custom_blue_gradient{
+	background-color: #006E8C !important;
+	background: -webkit-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3) !important;
+	background:    -moz-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3) !important;
+	background:     -ms-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3) !important;
+	background:      -o-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3) !important;
+}
+
+.sg_custom_green{
+	background-color: #7cb82f;
+}
+
+.sg_custom_gold{
+	background-color: #e68523;
+}
+
+.sg_custom_star{
+	color: #EDDB11 !important;
+	color: -webkit-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	color: -moz-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	color: -ms-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+	color: -o-linear-gradient(#EDDB11 0%, #EFCF14 35%, #F1BF18 65%, #F2B21B 100%) !important;
+}
+
+.sg_custom_star_grey{
+	color: #CCCCCC;
+}
+
+.sg_custom_purple{
+	background-color: #8d6cab;
+}
+
+.sg_border_dashed_heavy{
+	border: 2px dashed #C0C0C0;
+}
+
+.sg_uppercase{
+	text-transform: uppercase;
+}
+
+.sg_dark_transparent{
+	background-color: rgba(0,0,0,0.8);
+}
+
+#sg_how_to_start{
+	background: url('../img/system-img/school.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+#sg_featured_schools{
+	background: #fbfbfb;
+	border-top: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+	display: block;
+}
+
+#sg_how_does_it_work{
+	
+}
+
+.sg_feature_container img{
+  width: 100%;
+  height: 120px;
+  padding: 5px;
+  border: 1px solid #e1e8ed;
+}
+
+@media only screen and (max-width: 480px){
+	#sg_featured_schools{
+		display: none;
+	}
+}
+
+.sg_color_white{
+	color: #fff !important;
+}
+
+.sg_txt_font_lg{
+	font-size: 18px;
+}
+/******* End of themes style *********/
+
+/******* All schools page style ********/
+
+.sg_custom_content{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px){
+	.sg_all_schools_col_left{
+		padding-right: 20px;
+	}
+}
+
+/********** Phone number field style *********/
+@media only screen and (min-width: 991px){
+    .sg_phone_zip, .sg_phone_number{
+       display: inline-block !important;
+	}
+
+	.sg_phone_zip{
+		width: 40% !important;
+	}
+
+	.sg_phone_number{
+	   width: 60% !important;
+	}
+}
+
+/********* End of phone number field style ********/
+
+/******** Select Account Style *************/
+.sg_select_account{
+	position: absolute;
+	top: 80px;
+	color: #FFFFFF;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.sg_select_account .sg_btn_default{
+	text-align: center;
+}
+
+@media only screen and (max-width: 480px){
+   .sg_select_account{
+   	  position: relative;
+   	  top: 0px;
+   	  background: #666;
+   }
+
+   .sg_select_account_content{
+   	  height: auto;
+   }
+
+   .sg_select_account_banner img{
+   	  display: none;
+   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+   .sg_select_account_content{
+   	  min-height: 300px;
+   }
+}
+
+@media only screen and (min-width: 992px){
+   .sg_select_account_content{
+   	  min-height: 100px;
+   }
+}
+/******** End of Select Account Style *************/
+
+/****** Multi step form style *********/
+.sg_multi_step_form{
+	/*background: -webkit-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:    -moz-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:     -ms-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);
+	background:      -o-linear-gradient(top,#00A4D3 6%,#006E8C 90%,#00A4D3);*/
+	background: #006E8C;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+	border-radius: 4px 4px 0px 0px;
+	text-align: center;
+}
+
+.sg_multi_step_form .sg_step_container span{
+	display: block;
+	text-align: center;
+}
+
+.sg_multi_step_form .sg_step_container .sg_step_number{
+   height: 50px;
+   width: 50px;
+   border: 5px solid #FFA834; 
+   border-radius: 25px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.sg_pale_green{
+	color: #9fc748;
+}
+
+.sg_multi_step_form .sg_step_container .sg_step_active{
+	/*background: #9fc748; */
+	height: 70px;
+    width: 70px;
+    border-radius: 35px;
+}
+
+.sg_multi_step_form .sg_step_container .sg_step_completed{
+    border: 5px solid #9fc748;
+}
+
+.sg_multi_step_form .sg_step_container .sg_step_active .sg_step_number_tag{
+	position: relative;
+	top: 18px;
+}
+
+.sg_multi_step_form .sg_step_container .sg_step_number_tag{
+	text-align: center;
+	vertical-align: center;
+	font-weight: bold;
+    position: relative;
+    top: 8px;
+}
+
+.sg_custom_content_no_top_radius{
+	border-radius: 0px 0px 4px 4px;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF; 
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.sg_multi_step_form h3{
+	text-align: center;
+}
+/****** End of Multi step form style *********/
+
+/******* Social media sharing container style ******/
+.sg_social_media{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.sg_social_media_icon_container{
+   
+}
+
+.sg_social_media_icon{
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #C0C0C0;
+}
+
+.sg_share_link{
+	margin-left: 15px;
+}
+
+.sg_likes_count{
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 992px){
+   .sg_share_link_text{
+   	  display: none;
+   }
+}
+
+@media only screen and (max-width: 991px){
+   .sg_share_link_text{
+   	  display: inline-block;
+   }
+
+   .sg_social_media_icon_container .sg_col{
+   	  margin-bottom: 10px;
+   }
+}
+/******* End of ocial media sharing container style ******/
+
+/******** Applicants list page style ********/
+.sg_applicant_item .sg_applicant_name{
+	position: relative;
+    top: -5px;
+}
+
+.sg_applicant_application_list .sg_application_media{
+	padding-bottom: 10px;
+}
+/******** End of Applicants list page style ********/
+
+/****** Start-Completed Status style ***********/
+.sg_start_complete_status_container{
+   color: #fff;
+   font-size: 12px;
+   position: relative;
+   top: -10px;
+}
+
+.sg_start_complete_status_container .sg_start_status{
+   /*background: #006E8C; */
+   background: #9fc748; 
+}
+
+.sg_start_complete_status_container .sg_complete_status{
+   background: #C0C0C0;
+}
+
+.sg_start_complete_status_container .sg_start_status, .sg_start_complete_status_container .sg_complete_status{
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 3px;
+}
+
+/****** End of Start-Completed Status style ***********/
+
+/***** AJAX form style *************/
+.sg_ajax_messages{
+	display: none;
+	overflow: auto;
+}
+
+.sg_close_ajax_messages{
+	float: right;
+	background: inherit;
+	height: 26px;
+	width: 26px;
+	border: 2px solid #C0C0C0;
+	padding: 4px;
+	border-radius: 13px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	cursor: pointer;
+
+}
+/****** End of AJAX form style ***********/
+
+/******* Site adverts style *******/
+.sg_advert{
+	width: 100%;
+	margin-bottom: 20px;
+	height: 200px;
+	border: 1px solid #C0C0C0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+.sg_advert img{
+	width: 100%;
+	height: 100%;
+}
+/******* End of Site adverts style *******/
+
+/******** Public search results style ******/
+.sg_search_field_container{
+	position: relative;
+}
+
+#sg_public_search_results, #sg_professions_results, #sg_schools_search_results{
+	position: absolute;
+	z-index: 4000;
+	width: 100%;
+}
+
+
+/******** End of Public search results style ******/
+
+/******* Education issues read more style ********/
+.sg_read_more_link_block{
+	display: block;
+}
+
+.sg_follow_author img{
+   height: 20px;
+   width: 20px;
+   margin-right: 15px;
+   border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_follow_author .sg_follow_icons{
+		display: block;
+	}
+}
+/******* End of education issues read more style ********/
+
+/********* School Admin Home Style *****************/
+.sg_key_value{
+   display: block;
+}
+
+.sg_key_value .sg_key, .sg_key_value .sg_value{
+    display: inline-block; 
+} 
+
+.sg_subscription_details .sg_key_value{
+	width: 100%;
+	border-bottom: 1px dashed #C0C0C0;
+}
+
+.sg_subscription_details .sg_key_value:last-child{
+	font-weight: bold;
+}
+
+.sg_subscription_info{
+	padding: 10px;
+}
+
+.sg_float_center{
+	float: center;
+}
+
+.sg_float_left{
+	float: left;
+}
+
+.sg_float_right{
+	float: right;
+}
+
+.sg_position_relative{
+	position: relative;
+}
+
+.sg_position_absolute{
+	position: absolute;
+}
+
+.sg_position_fixed{
+	position: fixed;
+}
+/********* End of School Admin Home Style *****************/
+
+/******** Applicants list style ***********/
+.sg_applicants_list{
+    box-shadow: none;
+}
+
+.sg_applicants_list a{
+	border: none;
+}
+/******** End of Applicants list style ***********/
+
+/******* Applicant preview page style ***********/
+.sg_panel_group{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.sg_panel_group_item{
+	margin-bottom: 20px;
+}
+
+#sg_school_build_profile .sg_panel_group_item{
+	margin-bottom: 60px;
+}
+
+.sg_panel_group_item .sg_panel_group_heading{
+	background: #f5f5f5;
+	width: 100%;
+	padding: 2px 5px 2px 10px;
+}
+
+/******* End of Applicant preview page style ***********/
+
+/********* Countries icons style ***************/
+.sg-country{
+   height: 20px;
+   width: 20px;
+   position: relative;
+   top: 5px;
+   display: inline-block;
+   background-size: 18px 12px;
+}
+
+.sg-country-tz{ background: url('../img/countries-icons/png/tz.png') left center no-repeat; }
+.sg-country-ke{ background: url('../img/countries-icons/png/ke.png') left center no-repeat; }
+.sg-country-ug{ background: url('../img/countries-icons/png/ug.png') left center no-repeat; }
+
+/********* End of Countries icons style ***************/
+
+/******* School Administrators Start Page Style************/
+.sg_custom_left_margin{
+	margin-left: 90px;
+}
+
+@media only screen and (max-width: 480px){
+	.sg_custom_left_margin{
+	   margin-left: 0px;
+    }
+}
+/******* End of School Administrators Start Page Style************/
+
+/***** Subscription plan style **********/
+#sg_professional_cover{
+    background: url('../img/system-img/admin-banner.png') no-repeat;
+	background-size: 100% 100%;
+	min-height: 200px;
+}
+
+#sg_students_cover{
+    background: url('../img/system-img/students-banner.png') no-repeat;
+	background-size: 100% 100%;
+	min-height: 200px;
+}
+
+.sg_img_text{
+	color: #fff;
+	font-family: "Poiret One","Segoe WP", "Lucida Grande", "Lucida Sans Unicode", helvetica, serif, sans-serif;
+}
+
+.sg_plan_container{
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+}
+
+.sg_plan_header{
+	width: 100%;
+	height: 60px;
+	background: #f5f5f5;
+	text-align: center;
+	margin: 0px;
+}
+
+.sg_plan_header h3{
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.sg_plan_body{
+	padding: 10;
+	color: #fff;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.sg_plan_body ul li{
+	list-style: none;
+}
+
+.sg_plan_body h1{
+	font-weight: bold;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+.sg_plan_footer{
+	width: 100%;
+	height: 50px;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+.sg_header_stripe h1{
+	margin: 0px;
+}
+
+.sg_header_stripe{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sg_professional_pack, .sg_professional_pack_header, .sg_premium_pack, .sg_premium_pack_header{
+    display: none;
+}
+/****** End of subscription plan style **********/
+
+/******** Quick links style *********/
+.sg_quick_links_container{
+	width: 100%;
+}
+
+.sg_quick_links{
+	width: 100%;
+}
+
+.sg_active_list_item{
+	border-bottom: 3px solid #C0C0C0 !important;
+}
+
+
+/******** End of quick links style ********/
+
+/******* Chart style **********/
+
+.sg_chart_container{
+	width: 100%;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+/******* End of chart style ***********/
+
+/******** Corner ribbon style ********/
+.sg_ribbon_wrapper {
+  margin: 50px auto;
+  width: 280px;
+  height: 370px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 8px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 8px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 90;
+}
+
+.sg_ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.sg_ribbon-green {
+  font: bold 15px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.sg_ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.sg_ribbon-green:before {
+  left: 0;
+}
+
+.sg_ribbon-green:after {
+  right: 0;
+}​
+/******** End of corner ribbon style *******/
+
+/******* Promotion style *********/
+.sg_promo_container{
+	width: 100%;
+	height: 300px;
+	background: #fff;
+}
+
+/******* End of promotion style ********/
+
+/********** AJAX results container style **********/
+.sg_ajax_results_container{
+    position: relative;
+}
+
+.sg_ajax_results_list{
+	position: absolute;
+	z-index: 900;
+	width: 100%;
+}
+
+.sg_ajax_results_list li{
+   background: #f5f5f5;
+}
+
+.sg_ajax_results_list li:hover{
+   background: #fcf8e3;
+   cursor: pointer;
+}
+
+
+/********** End of AJAX results container style **********/
+
+/******** Pop notification style ********/
+
+#sg_success_number, #sg_success_number_blue{
+	font-weight: bold;
+	font-size: 100px;
+	font-style: italic;
+	color: #7cb82f;
+}
+
+#sg_success_number_blue{
+	color: #00abec;
+}
+
+.sg_pop_text, .sg_pop_text_gold{
+	font-weight: bold;
+    font-size: 30px;
+    color: #00abec;
+    text-align: center;
+}
+
+.sg_pop_text_gold{
+	color:  #e68523;
+}
+
+/*#sg_professionals_pop_notification .sg_panel{
+	background: #00abec;
+}*/
+/******** End of Pop notification style ********/
+
+/******** Contact sales style *********/
+.sg_contact_sales{
+	padding: 10px;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background: #006E8C;
+}
+
+.sg_promo_step h1{
+    text-transform: uppercase;
+}
+
+.sg_promo_step{
+	padding: 10px;
+	color: #e68523;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #e68523;
+	margin-bottom: 20px;
+}
+/******** End of contact sales ********/
+
+/****** Subscription Price Style ********/
+#sg_subscription_price{
+	width: 100%;
+	height: 70px;
+	border: 1px solid #C0C0C0;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#sg_subscription_price span{
+	font-size: 40px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px){
+	#sg_subscription_price{
+	  width: 100%;
+	  height: 50px;
+    }
+    #sg_subscription_price span{
+	  font-size: 30px;
+	  font-weight: bold;
+      vertical-align: middle;
+    }
+}
+/****** End of subscription price style *****/
+
+/***** FAQs page style ********/
+.sg_glow{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  -ms-transition: box-shadow 0.2s ease-in;
+  -ms-transition: box-shadow 0.2s ease-in;
+   transition: box-shadow 0.2s ease-in;
+}
+
+.sg_glow:hover{
+   cursor: pointer;
+   box-shadow: 0px 0px 5px #000, 0px 0px 10px #C0C0C0;
+}
+
+.sg_info_container{
+	position: relative;
+}
+
+/***** End of FAQs page style ********/
+
+/**** School Admin Home page service style *****/
+.sg_service_container img{
+	width: 100%;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.sg_service_container img:hover{
+	box-shadow: 0px 0px 5px #C0C0C0, 0px 0px 10px #fff;
+}
+
+/**** End of School Admin Home page service style *****/
